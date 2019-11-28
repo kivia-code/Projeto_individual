@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css" media="screen and (max-width: 480px)">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Passe Adiante </title>
+
+</head>
+<body>
+
+
+    <div class="foto">
+      <div class="text_cadastro">
+         <b>Passe Adiante</b> </div>
+
+    <div class="cabecalho">
+
+    </div>
+
+    <div class="login">
+        <h1>Cadastre- se </h1>
+        <form>
+            <input type="text" name="" placeholder="Nome Completo" id="nome_completo"><br>
+                <input type="text" name="" placeholder="Email" id="email"><br>
+                <input type="text" name="" placeholder="Senha" id="senha"><br>
+                <input type="password" name="" placeholder="Confirmar Senha" id="confsenha"><br>
+                <a href="./index.html"></a>
+                <input type="submit" class="btn" name="" value="Cadastrar" onclick="validar()"></br>
+               
+                
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+
+function validar() {
+        if (email.value.indexOf("@") == -1 || email.value == "" || nome_completo.value == "" || senha.value == "" || confsenha.value != senha.value) {
+            alert("Ops ! Precisa inserir os dados corretamente ! ");
+        } else {
+            this.open("./index.html");
+        }
+    }
+
+</script>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css" media="screen and (max-width: 480px)">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Passe Adiante </title>
+
+</head>
+<body>
+
+
+    <div class="foto_index">
+      <div class="text">
+         <b>Passe Adiante</b> </div>
+
+         <a href="teladecadastro.html">
+    <input type="submit" class="bottom" name="" value="Cadastrar >>"></br></a>
+
+
+    <div class="cabecalho">
+        
+        <img src="img/ursinho.png" alt="ursinho">
+
+    </div>
+
+    <div class="login">
+        <h1>Login</h1>
+        <form>
+                <input type="text" name="" placeholder="Email" id="email_usuario"><br>
+                <input type="password" name="" placeholder="Senha"id="senha_usuario"><br>
+                <input type="submit" class="btn" name="" value="Login" onclick="entrar()"></br>
+                <a href="#" >Esqueceu sua senha ?</a><br>
+                
+        </form>
+
+    </div>
+    <div class="line">
+    </div>
+    
+    <div class="final">
+            <a href="#" >Contatos</a>
+            <a href="#" >Sobre </a>
+            <a href="#" >Endereço</a>
+    </div>
+
+
+
+</div>
+</body>
+</html>
+
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+            
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    
+                    window.location.href = 'tempo-real.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                response.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display= 'none';
+        div_erro.style.display = 'block';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

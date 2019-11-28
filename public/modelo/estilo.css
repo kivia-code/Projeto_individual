@@ -1,0 +1,208 @@
+
+body{
+    padding:0;
+    margin:0;
+    font-family: "Questrial";
+}
+
+
+.foto_index {
+    background-image: url(./img/doacaomeninafosca2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Questrial";
+
+}
+
+.foto {
+    background-image: url(./img/urson.tela.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: "Questrial";
+    
+}
+
+.text, .text_cadastro {
+ font-size: 30px;
+ color: #DC143C;
+ float: left; 
+ text-transform: bold;
+ height: 70px;
+ margin-top: 20px;
+ margin-left: -40px;
+ 
+}
+
+.text_cadastro{
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+   
+   }
+.text b{
+    color: #DC143C;
+    margin-left: 60px;
+    margin-top: 20px;
+   
+   }
+.text_cadastro b{
+    color: #fff;
+    width: 13vw;
+ 
+   }
+
+.bottom { 
+    height: 55px;
+    width:13vw;
+    border-radius: 20px;
+    background-color: #DC143C;
+    color: #fff;
+    float: right; 
+    margin-right: 90px; 
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #DC143C;
+    transition: 0.5s;
+    font-weight: bold;
+    
+}
+.bottom:hover {
+    background-color:#f88585;
+    transition: 0.2s;
+}
+
+
+
+ .cabecalho{
+    text-align: center;
+    border-bottom: 2px solid #DC143C;
+    height:60px;
+
+
+ }
+
+ .cabecalho img {
+    width:85px;
+    
+ }
+
+.login{
+    width: 330px;
+    height: 440px;
+    color: rgb(238, 172, 172);
+    margin: 40px auto;
+    box-sizing: content-box;
+    
+}
+
+
+.h1{
+    margin :auto auto;
+    padding-top: 50%;
+    padding-left: 50%;
+    padding-bottom: 50px;
+    letter-spacing: 40px;
+    text-transform: uppercase;
+    text-align:50px;
+    font-size: 35px;
+}
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.login input {
+    height: 35px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: 2px solid #DC143C;
+    border-radius: 16px;
+    background:white;
+    font-size: 14px;
+    text-align: center;
+    
+
+}
+
+.login input [type="text"], input[type="password"]{
+    border-block-end-style: double ; color: #DC143C;
+    border-bottom: 1px solid #DC143C;
+    background:white;
+    outline:#DC143C ;
+    height: 35px;
+    color:#DC143C ;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.login .btn{
+    border-block-end-style: double;
+    height: 40px;
+    color:white;
+    border-radius: 200px;
+    transition: 0.2s;
+    background-color:#DC143C;
+    font-size: 20px;
+}
+
+.btn:hover {
+    transition:0.2s;
+    background-color: #ff4d4d;
+}
+
+.login input [type="submit"]:hover{
+    cursor:pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+.login a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size:16px;
+    line-height: 20px;
+    color: #DC143C;
+    transition: 0.2s;
+}
+.login a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+
+}
+.line{
+    border-bottom: 2px solid #DC143C;
+    margin-top: 60px;
+   
+
+}
+
+.final{
+    font-weight: bold;
+    text-decoration:none;
+    font-size:20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.final > a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
