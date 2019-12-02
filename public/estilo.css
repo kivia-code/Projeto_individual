@@ -39,27 +39,23 @@ body{
  text-transform: bold;
  height: 70px;
  margin-top: 20px;
- margin-left: -40px;
+ 
  
 }
 
-.text_cadastro{
-    text-align: center;
-    width: 100%;
-    font-size: 35px;
-   
-   }
+
 .text b{
     color: #DC143C;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 20px;
    
    }
 .text_cadastro b{
     color: #fff;
-    width: 12vw;
-    text-align: center;
- 
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 30px;
+   
    }
 
 .bottom { 
@@ -82,6 +78,25 @@ body{
     transition: 0.2s;
 }
 
+.bottomlogin { 
+    height: 55px;
+    border-radius: 20px;
+    background-color: #DC143C;
+    color: #fff;
+    float: right; 
+    margin-right: 60px; 
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #DC143C;
+    transition: 0.5s;
+    width:135px;
+    
+}
+.bottomlogin:hover {
+    background-color:#f88585;
+    transition: 0.2s;
+}
 
 
  .cabecalho{
@@ -100,7 +115,7 @@ body{
 .login{
     width: 330px;
     height: 440px;
-    color: rgb(238, 194, 173);
+    color: rgb(238, 188, 155);
     margin: 40px auto;
     box-sizing: content-box;
     text-align: center;
